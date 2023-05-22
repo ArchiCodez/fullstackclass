@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=5.0" />
+    <title>HTML Form</title>
+  <style>
+      body{
+          background-color: rgb(246, 243, 244);
+          font-size: 18px;
+      }
+      form{
+          background-color: rgb(255, 199, 231);
+          padding: 50px;
+          margin: 10px 50px;
+          width: 500px;
+         
+      }
+      .button{
+    background-color: rgba(0, 128, 0, 0);
+    height: 40px;
+    color: green;
+    text-transform: uppercase;
+    font-size: large;
+    border: 2px solid green;
+}
+    form {
+    margin: 0 auto; 
+    width:600px;
+    } 
+    label{
+        width: 240px;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    
+    <form>
+        <h1 style="text-align:center;"> Registration Form </h1>
+        <br>
+        
+      <label for="fullname">Student Name</label>
+      <input type="text" placeholder="FIRST" id="fullname" required />
+      <input type="text" placeholder="LAST" id="fullname" required />
+      <br />
+      <p>Please Select your Gender</p>
+      <input type="radio" id="male" name="gender">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" >
+      <label for="female">Female</label><br /><br>
+      <label for="DOB"> Student Birth Date's </label>
+      <input id="DOB"  type="date" >
+      <br><br>
+      <label for="Student's Grade">Please select your class</label>
+      <select id="schoolclass">
+      <option>Class 1</option>
+      <option>Class 2</option>
+      <option>Class 3</option>
+      <option>Class 4</option>
+      <option>Class 5</option>
+      <option>Class 6</option>
+      <option>Class 7</option>
+      <option>Class 8</option>
+      <option>Class 9</option>
+      <option>Class 10</option>
+      <option>Class 11</option>
+      <option>Class 12</option>
+      </select>
+      <br><br>
+      <label for="mail">Student's EMail</label>
+      <input type="email" id="mail" placeholder="Email">
+      <br><br>
+      <hr />
+      <br>
+      <label for="fullname">Parent's Name</label>
+      <input type="text" placeholder="FIRST" id="fullname" required />
+      <input type="text" placeholder="LAST" id="fullname" required />
+      <br /><br />
+      <label for="mail">Parent's EMail</label>
+      <input type="email" id="mail" placeholder="Email">
+      <br>
+      <label for="query">Address</label>
+      <textarea id="query"></textarea>
+      <br><br>
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="phone" placeholder="phone">
+
+      <br><br>   
+      <br /><br />
+      <input type="reset" style="margin-left: 40%" />
+      <input type ="submit"  value ="submit" />
+    
+    </form>
+  </body>
+</html>
