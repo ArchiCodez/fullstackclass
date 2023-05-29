@@ -1,38 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width:300px" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
     <style>
 
-      h1{
-        color: beige;
-        text-shadow: 25px 25px #82ff82;
-      }
-    div{
-      background-color: #82ff82;
-      height: 200px;
-      width: 200px;
-      text-shadow: 5px 5px lightpink;
-    }
+h1{
+  color: aliceblue;
+  text-shadow: 1px 1px 2px #0da30d ,1px 1px 2px red;
+}
 
-      </style>
+.item{
+
+  background-color: #0da30d;
+  /* width: 200px; */
+  height: 200px; 
+  border: 1px solid black;
+  
+}
+.container{
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  gap:10px 5px;
+  /* justify-content: flex-end; */
+}
+
+
+/* div:hover{
+  transform: rotateZ(50deg);
+} */
+
+
+</style>
   </head>
-<body>
-
-<h1>Hellod</h1>
-
+  <body>
+    
 
 
-<div>
-<p>test</p>
+<!-- <div>
+<img src="/images/photo1.jpg" style="width: 100%;">
+</div> -->
 
 
+<div class="container">
+<div class="item" style="grid-column: 1/5;">1</div>
+<div class="item">2</div>
+<div class="item">3</div>
+<div class="item">4</div>
+<div class="item">5</div>
+<div class="item">6</div>
+<div class="item">7</div>
 </div>
 
 
 
-</body>
-  </html>
+
+  </body>
+</html>
